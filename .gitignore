@@ -1,0 +1,7 @@
+build/
+safe_planner
+safe_planner.exe
+*.o
+.vscode/
+.idea/
+.DS_Store

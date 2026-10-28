@@ -1,0 +1,88 @@
+
+=== Test 1 - Basic reachability ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 1 -> 2 -> 3
+Transition IDs: 10, 11, 12
+Total transition cost: 3.0000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9703
+Explored states: 4
+Planning time (ms): 0.0183
+
+=== Test 2 - Bad-state avoidance ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 3 -> 4 -> 5
+Transition IDs: 23, 24, 25
+Total transition cost: 3.0000
+Minimum distance to bad state: 2.0000
+Cumulative reliability: 0.9703
+Explored states: 5
+Planning time (ms): 0.0030
+
+=== Test 3 - Safety/cost trade-off ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 3 -> 4
+Transition IDs: 33, 34
+Total transition cost: 2.6000
+Minimum distance to bad state: 1.0050
+Cumulative reliability: 0.9801
+Explored states: 3
+Planning time (ms): 0.0017
+
+=== Test 4 - Dynamic transition unavailable ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 2 -> 3
+Transition IDs: 42, 43
+Total transition cost: 2.4000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9801
+Explored states: 4
+Planning time (ms): 0.0014
+
+=== Test 5a - Original goal ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 1 -> 2
+Transition IDs: 50, 51
+Total transition cost: 2.0000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9801
+Explored states: 4
+Planning time (ms): 0.0010
+
+=== Test 5b - Updated goal (replan) ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 3
+Transition IDs: 52
+Total transition cost: 1.0000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9900
+Explored states: 3
+Planning time (ms): 0.0009
+
+=== Test 6a - Before shortcut ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 1 -> 2 -> 3
+Transition IDs: 60, 61, 62
+Total transition cost: 6.0000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9703
+Explored states: 4
+Planning time (ms): 0.0009
+
+=== Test 6b - After shortcut (replan) ===
+Status: SUCCESS
+Message: Safe path found.
+State path: 0 -> 3
+Transition IDs: 63
+Total transition cost: 1.0000
+Minimum distance to bad state: N/A (no bad states specified)
+Cumulative reliability: 0.9900
+Explored states: 2
+Planning time (ms): 0.0008
